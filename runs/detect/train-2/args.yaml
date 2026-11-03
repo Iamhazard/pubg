@@ -1,11 +1,11 @@
 task: detect
 mode: train
-model: yolov8n.pt
-data: /home/amrit-acharya/LLM/Erangle/datasets/Erangle/Erangle.yaml
-epochs: 100
+model: yolo26n.pt
+data: ../pubg/map/map-seg.yaml
+epochs: 50
 time: null
 patience: 100
-batch: 4
+batch: 8
 imgsz: 640
 save: true
 save_period: -1
@@ -20,7 +20,7 @@ cls_remap: true
 optimizer: auto
 verbose: true
 seed: 0
-deterministic: true
+deterministic: false
 single_cls: false
 rect: false
 cos_lr: false

@@ -1,8 +1,8 @@
 task: detect
 mode: train
-model: yolov8n.pt
-data: data.yaml
-epochs: 50
+model: yolo26n.pt
+data: ../pubg/map/map-seg.yaml
+epochs: 100
 time: null
 patience: 100
 batch: 16
@@ -10,7 +10,7 @@ imgsz: 640
 save: true
 save_period: -1
 cache: false
-device: cpu
+device: "0"
 workers: 8
 project: null
 name: train-3
@@ -20,7 +20,7 @@ cls_remap: true
 optimizer: auto
 verbose: true
 seed: 0
-deterministic: false
+deterministic: true
 single_cls: false
 rect: false
 cos_lr: false

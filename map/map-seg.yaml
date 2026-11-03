@@ -1,0 +1,15 @@
+path: /home/amrit-acharya/LLM/pubg/map # dataset root dir
+train: images/train
+val: images/val
+test: images/test
+
+# Classes
+names:
+  0: first circle
+  1: second circle
+  2: Third circle
+  3: fourth circle
+  4: fifith circle
+  5: sixth circle
+  6: final circle
+  7: blue zone
